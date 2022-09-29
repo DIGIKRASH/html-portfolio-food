@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
+  @@include('./blocks/main/_head.html', { "title": "Главная", })
 
-@@include('./blocks/main/_head.html', {
-"title": "Главная",
-})
-
-<body>
-
+  <body>
     @@include('./blocks/main/_header.html')
 
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <aside class="sidebar">
+            <ul class="sidebar__list">
+              <li class="sidebar__list-item active">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#category1" />
+                </svg>
+                <p>Суши</p>
+              </li>
+              <li class="sidebar__list-item">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#category1" />
+                </svg>
+                <p>Суши</p>
+              </li>
+              <li class="sidebar__list-item">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#category1" />
+                </svg>
+                <p>Суши</p>
+              </li>
+              <li class="sidebar__list-item">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#category1" />
+                </svg>
+                <p>Суши</p>
+              </li>
+              <li class="sidebar__list-item">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#category1" />
+                </svg>
+                <p>Суши</p>
+              </li>
+            </ul>
+          </aside>
 
-    @@include('./blocks/item.html')
+          <div class="items">
+            <div class="items__group">
+              <h2 class="items__group-title">Суши</h2>
+              <div class="items__group-grid">
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+              </div>
+            </div>
 
+            <div class="items__group">
+              <h2 class="items__group-title">Суши</h2>
+              <div class="items__group-grid">
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+                @@include('./blocks/item.html') @@include('./blocks/item.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     @@include('./blocks/main/_footer.html')
 
-    
-
-
     <!-- Scripts -->
     @@include('./blocks/main/_js.html')
-
-</body>
-
+  </body>
 </html>
