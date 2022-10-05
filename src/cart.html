@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./blocks/main/_head.html', { "title": "Главная", })
+
+  <body class="full">
+    @@include('./blocks/main/_header.html')
+
+    <!-- cart
+   ======================================================= -->
+    <section class="cart">
+      <div class="container">
+        <div class="cart__inner">
+          <div class="cart__back">
+            <svg width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#back" />
+            </svg>
+            <p>Вернуться назад</p>
+          </div>
+
+          <div class="cart__content">
+            <div class="cart--left">
+              <ul class="cart__total">
+                <li class="cart__total-li">
+                  <p>Количество продуктов:</p>
+                  <b> 3</b>
+                </li>
+                <li class="cart__total-li">
+                  <p>Количество продуктов:</p>
+                  <b> 3</b>
+                </li>
+              </ul>
+              <button class="cart__total-btn btn">Оплатить</button>
+            </div>
+            <div class="cart--right">
+              <div class="cart__clear">
+                <svg width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#cart" />
+                </svg>
+                <p>Очистить корзину</p>
+              </div>
+
+              <table class="cart__table">
+                @@include('./blocks/cart-item.html')
+                @@include('./blocks/cart-item.html')
+                @@include('./blocks/cart-item.html')
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart end -->
+
+    @@include('./blocks/main/_footer.html')
+
+    <!-- Scripts -->
+    @@include('./blocks/main/_js.html')
+  </body>
+</html>

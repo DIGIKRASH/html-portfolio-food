@@ -197,3 +197,132 @@
     margin-bottom: 100px;
   }
 }
+
+// --------- cart ----------
+.cart {
+  // min-height: calc(100vh - 231px);
+  .cart__inner {
+  }
+  .cart__back {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 35px;
+    svg {
+      fill: #000;
+      width: 27px;
+      height: 16px;
+      margin-right: 20px;
+    }
+  }
+  .cart__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 170px;
+  }
+  .cart--left {
+    margin-top: 120px;
+    width: 315px;
+  }
+  .cart__total {
+    margin-bottom: 80px;
+  }
+  .cart__total-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    line-height: 35px;
+    b {
+      font-weight: 700;
+    }
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+  .cart__total-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .cart--right {
+    width: calc(90% - 315px);
+  }
+  .cart__clear {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0.35;
+    font-size: 12px;
+    line-height: 19px;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 13px;
+    }
+  }
+  .cart__table {
+    width: 100%;
+    margin-top: 27px;
+  }
+}
+
+// --------- cart__item ----------
+.cart__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  .cart__item-img {
+    width: 110px;
+    height: 110px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.2));
+    }
+  }
+  .cart__item-name {
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: capitalize;
+  }
+  .cart__item-counter {
+    font-size: 18px;
+    line-height: 29px;
+    padding: 3px 13px;
+    border: 1px solid #000;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cart__counter-btn {
+  }
+  .cart__counter--minus {
+  }
+  .cart__counter-number {
+    max-width: 30px;
+    margin: 2px 5px 0 ;
+    text-align: center;
+  }
+  .cart__counter--plus {
+  }
+  .cart__item-price {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .cart__item-delete {
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
