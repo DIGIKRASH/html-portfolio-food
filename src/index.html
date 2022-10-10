@@ -1,80 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('./blocks/main/_head.html', { "title": "Главная", })
+@@include('./blocks/main/_head.html', { "title": "Главная", })
 
-  <body>
-    @@include('./blocks/main/_header.html')
+<body>
+  @@include('./blocks/main/_header.html')
 
-    <main class="main">
-      <div class="container">
-        <div class="main__inner">
-          <aside class="sidebar">
-            <ul class="sidebar__list">
-              <li class="sidebar__list-item active">
-                <svg width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#category1" />
-                </svg>
-                <p>Суши</p>
-              </li>
-              <li class="sidebar__list-item">
-                <svg width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#category1" />
-                </svg>
-                <p>Суши</p>
-              </li>
-              <li class="sidebar__list-item">
-                <svg width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#category1" />
-                </svg>
-                <p>Суши</p>
-              </li>
-              <li class="sidebar__list-item">
-                <svg width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#category1" />
-                </svg>
-                <p>Суши</p>
-              </li>
-              <li class="sidebar__list-item">
-                <svg width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#category1" />
-                </svg>
-                <p>Суши</p>
-              </li>
-            </ul>
-          </aside>
+  <main class="main">
+    <div class="container">
+      <div class="main__inner">
+        <aside class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item active">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category1" />
+              </svg>
+              <p>Суши</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category2" />
+              </svg>
+              <p>Роллы</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category3" />
+              </svg>
+              <p>Сеты</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category4" />
+              </svg>
+              <p>Салаты</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category5" />
+              </svg>
+              <p>WOK</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category6" />
+              </svg>
+              <p>Соусы</p>
+            </li>
+            <li class="sidebar__list-item">
+              <svg width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#category7" />
+              </svg>
+              <p>Напитки</p>
+            </li>
+          </ul>
+        </aside>
 
-          <div class="items">
-            <div class="items__group">
-              <h2 class="items__group-title">Суши</h2>
-              <div class="items__group-grid">
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-              </div>
+        <div class="items">
+          <div class="items__group">
+            <h2 class="items__group-title">Суши</h2>
+            <div class="items__group-grid">
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
             </div>
+          </div>
 
-            <div class="items__group">
-              <h2 class="items__group-title">Суши</h2>
-              <div class="items__group-grid">
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-                @@include('./blocks/item.html') @@include('./blocks/item.html')
-              </div>
+          <div class="items__group">
+            <h2 class="items__group-title">Суши</h2>
+            <div class="items__group-grid">
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
+              @@include('./blocks/item.html', {
+              "img": "1",
+              "title": "Ролл Филадельфия",
+              "text": "акция, лосось, огурец, сыр сливочный 217 г", })
+              @@include('./blocks/item.html', {
+              "img": "2",
+              "title": "Ролл Дабл унаги",
+              "text": "акция, угорь, цыпленок, краб-крем, сыр сливочный, омлет тамаго, апельсиновый соус, спайси соус, паприка, кунжут 234 г", })
+              @@include('./blocks/item.html', {
+              "img": "3",
+              "title": "Ролл с тигровой креветкой и лососем",
+              "text": "акция, лосось, креветка тигровая, сыр сливочный, авокадо, масаго 202 г", })
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    @@include('./blocks/item-popup.html')
+  @@include('./blocks/item-popup.html')
+  @@include('./blocks/main/_footer.html')
 
-    @@include('./blocks/main/_footer.html')
+  <!-- Scripts -->
+  @@include('./blocks/main/_js.html')
+</body>
 
-    <!-- Scripts -->
-    @@include('./blocks/main/_js.html')
-  </body>
 </html>

@@ -6,15 +6,18 @@ $main: #cfbdb1;
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+
   &.hidden {
     overflow-y: hidden;
   }
 }
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
+
 body {
   position: relative;
   overflow-x: hidden;
@@ -24,7 +27,13 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #000;
+  background-color: #e1e1e3;
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 a {
   color: #000;
 }
@@ -33,11 +42,10 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 1315px;
 }
 
-.title {
-}
+.title {}
 
 .btn {
   padding: 12px 24px;
@@ -50,14 +58,25 @@ a {
   display: flex;
   align-items: center;
   border-radius: 30px;
+  cursor: pointer;
+
+  svg {
+    transition: 0.3s !important;
+  }
+
   &:hover {
     background: #000;
     color: #fff;
+
+    svg {
+      fill: #fff !important;
+    }
   }
 }
 
 .input-block {
   position: relative;
+
   .input {
     font-family: $font;
     font-size: 12px;
@@ -69,20 +88,24 @@ a {
     padding: 11px 16px;
     border: 1px solid transparent;
     transition: 0.2s;
+
     &::placeholder {
       color: #fff;
     }
+
     &:hover,
     &:focus {
       border: 1px solid rgba(#fff, 0.45);
     }
   }
+
   &.input-error {
     input {
       border: 1px solid rgb(95, 8, 8);
     }
   }
 }
+
 .error {
   position: absolute;
   bottom: -5px;
@@ -97,6 +120,7 @@ a {
 
 .wrapper {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -110,16 +134,18 @@ a {
 }
 
 .shadow {
-  filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 24px rgba(167, 151, 141, 0.5));
 }
 
 // ScrollBar
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: rgba($main, 1);
 }
+
 ::-webkit-scrollbar-track {
   background-color: #1c1c1c;
 }
