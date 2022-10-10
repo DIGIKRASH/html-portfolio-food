@@ -20,3 +20,7 @@ $(".item").each(function () {
 $('.sidebar__list-item').click(function () {
   $(this).toggleClass('active');
 });
+
+$('.item__add-element').click(function () {
+  $(this).toggleClass('active');
+});
