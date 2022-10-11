@@ -1,91 +1,321 @@
 //Max-Width: 1279px ================================
 @media (max-width: 1279px) {
-
 }
 
 //Max-Width: 1200px ================================
 @media (max-width: 1200px) {
-
 }
 
 //Max-Width: 1150px ================================
 @media (max-width: 1150px) {
-
 }
 
 //Max-Width: 1100px ================================
 @media (max-width: 1100px) {
-
 }
 
 //Max-Width: 1023px ================================
 @media (max-width: 1023px) {
-
+  .cart {
+    min-height: calc(100vh - 348px);
+  }
+  .footer {
+    .footer__logo {
+      width: 175px;
+    }
+    .footer__text {
+      font-size: 14px;
+      line-height: 22px;
+      width: 190px;
+    }
+    .footer__schedule p:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .footer .footer__schedule {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .soclist__item:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
 }
 
 //Max-Width: 900px ================================
 @media (max-width: 900px) {
-
+  .footer {
+    .footer__phones {
+      svg {
+        display: none;
+      }
+      a {
+        display: block;
+      }
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 0px;
+      max-width: none;
+    }
+  }
 }
 
 //Max-Width: 850px ================================
 @media (max-width: 850px) {
-
 }
 
 //Планшет #########################################
 //Max-Width: 800px ================================
 @media (max-width: 800px) {
-
+  .cart {
+    min-height: calc(100vh - 430px);
+  }
+  .footer {
+    .footer__inner {
+      display: grid;
+      grid-template-areas:
+        'box-1 box-2 box-2'
+        'box-3 box-4 box-5';
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      width: 80%;
+      margin: 0 auto;
+      // justify-content: space-around;
+    }
+    .footer__logo {
+      grid-area: box-1;
+      width: 210px;
+    }
+    .footer__text {
+      grid-area: box-2;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .footer__phones {
+      grid-area: box-3;
+      max-width: 150px;
+      padding-left: 26px;
+      margin: 0 auto;
+      svg {
+        display: block;
+      }
+    }
+    .footer__schedule {
+      grid-area: box-4;
+      text-align: center;
+    }
+    .soclist {
+      grid-area: box-5;
+      justify-content: center;
+    }
+  }
 }
 
 //Max-Width: 750px ================================
 @media (max-width: 750px) {
-
+  .empty {
+    .empty__img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 28px;
+    }
+    .empty__title {
+      font-size: 19px;
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+    .empty__text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 20px;
+      max-width: 50%;
+    }
+    .empty__btn {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 10px 40px;
+    }
+  }
 }
 
 //Max-Width: 700px ================================
 @media (max-width: 700px) {
-
 }
 
 //Телефон #########################################
 //Max-Width: 641px ================================
 @media (max-width: 641px) {
-
+  .cart {
+    min-height: calc(100vh - 273px);
+  }
+  .footer {
+    .footer__inner {
+      width: 90%;
+      padding: 20px 0;
+    }
+    .footer__logo {
+      grid-area: box-1;
+      width: 100%;
+      img {
+        width: 80px;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    .footer__text {
+      width: 90%;
+    }
+  }
+  .header {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    .header__logo {
+      width: 70px;
+    }
+  }
 }
 
 //Max-Width: 600px ================================
 @media (max-width: 600px) {
-
+  .empty {
+    padding-top: 40px;
+    margin-bottom: 74px;
+    .empty__text {
+      max-width: 70%;
+    }
+  }
 }
 
 //Max-Width: 550px ================================
 @media (max-width: 550px) {
-
 }
 
 //Max-Width: 500px ================================
 @media (max-width: 500px) {
-
+  .footer {
+    .footer__inner {
+      display: grid;
+      grid-template-areas:
+        'box-1 box-3 box-5'
+        'box-1 box-4 box-5';
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 12px;
+      width: 100%;
+      margin: 0 auto;
+      // justify-content: space-around;
+    }
+    .footer__phones {
+      padding-left: 0;
+      max-width: none;
+      svg {
+        display: none;
+      }
+    }
+    .footer__text {
+      display: none;
+    }
+    .footer__schedule {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .soclist {
+      flex-direction: column;
+    }
+    .soclist__item:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 12px;
+    }
+  }
+  .footer__copy {
+    padding: 8px 0;
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 //Max-Width: 450px ================================
 @media (max-width: 450px) {
-
 }
 
 //Max-Width: 400px ================================
 @media (max-width: 400px) {
-
+  .empty {
+    .empty__img {
+      width: 200px;
+      height: 200px;
+    }
+    .empty__title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .empty__text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 20px;
+      max-width: 85%;
+    }
+    .empty__btn {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 8px 25px;
+    }
+  }
 }
 
 //Max-Width: 359px ================================
 @media (max-width: 359px) {
-    
 }
 
 //Max-Width: 340px ================================
 @media (max-width: 340px) {
-  
+  .footer {
+    .footer__inner {
+      display: grid;
+      grid-template-areas:
+        'box-1 box-3 box-5'
+        'box-1 box-4 box-5';
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 12px;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 15px 0;
+    }
+    .footer__logo {
+      height: 100%;
+      margin-top: 15px;
+      justify-content: start;
+      img {
+        width: 65px;
+        height: auto;
+      }
+    }
+    .footer__phones {
+      padding-left: 0;
+      max-width: none;
+      font-size: 14px;
+      line-height: 26px;
+      svg {
+        display: none;
+      }
+    }
+    .footer__schedule {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .soclist {
+      flex-direction: column;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .soclist__item:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 12px;
+    }
+  }
 }

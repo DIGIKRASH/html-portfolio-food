@@ -28,6 +28,11 @@
   }
   .footer__logo {
     width: 260px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .footer__text {
     font-weight: 700;
@@ -45,6 +50,7 @@
     position: relative;
     max-width: 165px;
     a {
+      white-space: nowrap;
       display: inline-block;
       color: $main;
       transition: 0.2s;
@@ -352,7 +358,9 @@
 
 // --------- cart ----------
 .cart {
-  // min-height: calc(100vh - 231px);
+  min-height: calc(100vh - 373px);
+  height: 100%;
+  position: relative;
   .cart__inner {
   }
 
@@ -547,7 +555,6 @@
   text-align: center;
   padding-top: 40px;
   margin-bottom: 140px;
-
   .empty__img {
     width: 320px;
     height: 320px;

@@ -38,12 +38,8 @@ const btnUp = {
   addEventListener() {
     // при прокрутке содержимого страницы
     window.addEventListener("scroll", () => {
-
       // определяем величину прокрутки
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-
-      var block_position = $("footer").offset().top;
-
       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
       scrollY > 400 ? this.show() : this.hide();
     });
