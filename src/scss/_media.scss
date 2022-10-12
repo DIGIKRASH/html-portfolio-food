@@ -1,9 +1,45 @@
+//Max-Width: 1350px ================================
+@media (max-width: 1350px) {
+  .sidebar {
+    margin-right: 60px;
+  }
+  .items {
+    .items__group-grid {
+      grid-gap: 10px;
+    }
+  }
+}
+
 //Max-Width: 1279px ================================
 @media (max-width: 1279px) {
 }
 
 //Max-Width: 1200px ================================
 @media (max-width: 1200px) {
+  .item {
+    margin-bottom: 90px;
+    width: 190px;
+    .item__img {
+      height: 151px;
+    }
+    .item__title {
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+  }
+  .sidebar {
+    .sidebar__list-item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .sidebar__list-item p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .sidebar__list-item svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 
 //Max-Width: 1150px ================================
@@ -16,6 +52,52 @@
 
 //Max-Width: 1023px ================================
 @media (max-width: 1023px) {
+  .sidebar {
+    position: fixed;
+    top: 137px;
+    left: 0;
+    width: 100%;
+    z-index: 250;
+    transition: 0.3s;
+    padding-top: 0;
+    &.fixed {
+      background-color: #e1e1e3;
+      top: 0;
+      padding: 15px 0;
+      box-shadow: 0px 0px 10px rgba(#000, 0.3);
+    }
+    .sidebar__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        height: 1px;
+      }
+    }
+    .sidebar__list-item {
+      svg {
+        margin-right: 15px;
+      }
+    }
+    .sidebar__list-item:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+  }
+  .items {
+    margin-top: 55px;
+    width: 100%;
+    .items__group-grid {
+      justify-content: center;
+      align-items: center;
+    }
+    .item {
+      margin: 0 auto;
+      margin-bottom: 90px;
+      width: 210px;
+    }
+  }
   .cart {
     min-height: calc(100vh - 348px);
   }
@@ -43,6 +125,32 @@
 
 //Max-Width: 900px ================================
 @media (max-width: 900px) {
+  .items {
+    .items__group-title {
+      font-size: 30px;
+      margin-bottom: 64px;
+    }
+    margin-top: 55px;
+    width: 100%;
+    .items__group-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .item {
+      height: 325px;
+      width: auto;
+      max-width: 260px;
+    }
+    .item .item__img {
+      height: 200px;
+    }
+    .item .item__content {
+      margin-top: 10px;
+    }
+    .items__group {
+      margin-bottom: 25px;
+    }
+  }
   .footer {
     .footer__phones {
       svg {
@@ -66,6 +174,12 @@
 //Планшет #########################################
 //Max-Width: 800px ================================
 @media (max-width: 800px) {
+  .btn-up {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+  }
   .cart {
     min-height: calc(100vh - 430px);
   }
@@ -114,6 +228,12 @@
 
 //Max-Width: 750px ================================
 @media (max-width: 750px) {
+  .items {
+    margin-bottom: 0;
+    .item .item__img {
+      height: 180px;
+    }
+  }
   .empty {
     .empty__img {
       width: 250px;
@@ -141,11 +261,22 @@
 
 //Max-Width: 700px ================================
 @media (max-width: 700px) {
+  .items {
+    .item .item__img {
+      height: 160px;
+    }
+  }
 }
 
 //Телефон #########################################
 //Max-Width: 641px ================================
 @media (max-width: 641px) {
+  .sidebar {
+    top: 80px;
+  }
+  .items {
+    margin-top: 85px;
+  }
   .cart {
     min-height: calc(100vh - 273px);
   }
@@ -178,6 +309,18 @@
 
 //Max-Width: 600px ================================
 @media (max-width: 600px) {
+  .items {
+    .item .item__img {
+      height: 200px;
+    }
+    .items__group-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .items__group-title {
+      font-size: 26px;
+      margin-bottom: 85px;
+    }
+  }
   .empty {
     padding-top: 40px;
     margin-bottom: 74px;
@@ -193,6 +336,31 @@
 
 //Max-Width: 500px ================================
 @media (max-width: 500px) {
+  .sidebar {
+    top: 80px;
+    .sidebar__list-item p {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    .sidebar__list-item svg {
+      width: 30px;
+      height: 30px;
+    }
+    &.fixed {
+      padding: 10px 0;
+    }
+    .sidebar__list {
+      padding: 0 10px;
+    }
+    .sidebar__list-item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .items {
+    .item .item__img {
+      height: 150px;
+    }
+  }
   .footer {
     .footer__inner {
       display: grid;
@@ -241,6 +409,22 @@
 
 //Max-Width: 400px ================================
 @media (max-width: 400px) {
+  .items {
+    .items__group-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .item {
+      height: 325px;
+      max-width: 80%;
+    }
+    .item .item__img {
+      height: 220px;
+    }
+  }
+  .btn-up {
+    right: 15px;
+    bottom: 15px;
+  }
   .empty {
     .empty__img {
       width: 200px;
@@ -270,6 +454,19 @@
 
 //Max-Width: 340px ================================
 @media (max-width: 340px) {
+  .items {
+    .item {
+      height: 325px;
+      max-width: 100%;
+    }
+    .item .item__img {
+      width: 90%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: -80px;
+      height: 220px;
+    }
+  }
   .footer {
     .footer__inner {
       display: grid;

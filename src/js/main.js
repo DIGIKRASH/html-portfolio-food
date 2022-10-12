@@ -42,6 +42,11 @@ const btnUp = {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
       scrollY > 400 ? this.show() : this.hide();
+      if (scrollY > 10) {
+        $(".sidebar").addClass("fixed");
+      } else {
+        $(".sidebar").removeClass("fixed");
+      }
     });
     // при нажатии на кнопку .btn-up
     document.querySelector(".btn-up").onclick = () => {
