@@ -438,15 +438,16 @@
   }
 
   .cart__clear {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     opacity: 0.35;
     font-size: 12px;
     line-height: 19px;
     transition: 0.2s;
     cursor: pointer;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 145px;
+    margin-left: auto;
     &:hover {
       opacity: 1;
     }

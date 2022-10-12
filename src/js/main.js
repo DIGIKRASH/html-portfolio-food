@@ -1,5 +1,6 @@
 $(".item").click(function () {
   $(".item-popup").toggleClass("active");
+  $("html").toggleClass("fixed");
 });
 
 $(".item__close").click(function () {
