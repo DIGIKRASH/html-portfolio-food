@@ -62,3 +62,8 @@ const btnUp = {
 };
 
 btnUp.addEventListener();
+
+
+$('.item__popup-btn').click(function () {
+  $(this).toggleClass('active');
+});

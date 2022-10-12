@@ -1,3 +1,10 @@
+//Max-Width: 1435px ================================
+@media (max-width: 1435px) {
+  .item-popup .popup {
+    width: 80%;
+  }
+}
+
 //Max-Width: 1350px ================================
 @media (max-width: 1350px) {
   .sidebar {
@@ -16,6 +23,34 @@
 
 //Max-Width: 1200px ================================
 @media (max-width: 1200px) {
+  .item-popup {
+    z-index: 1000;
+    .popup--right {
+      padding: 25px;
+    }
+    .item__price {
+      font-size: 18px;
+      line-height: 30px;
+      b {
+        font-size: 25px;
+        line-height: 40px;
+      }
+    }
+    .popup--left {
+      padding: 25px;
+    }
+    .item__btn {
+      width: 90%;
+      white-space: nowrap;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 20px;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
   .item {
     margin-bottom: 90px;
     width: 190px;
@@ -52,6 +87,68 @@
 
 //Max-Width: 1023px ================================
 @media (max-width: 1023px) {
+  .item-popup.mini {
+    .popup {
+      width: 45%;
+    }
+    .item__btn {
+      width: 70%;
+    }
+  }
+  .item-popup .item__btn {
+    white-space: nowrap;
+  }
+  .item__add {
+    width: 100%;
+    .item__add-title {
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+    }
+    .item__add-list {
+      width: 220px;
+      margin: 0 auto;
+      max-height: 170px;
+    }
+  }
+  .item__add-element {
+    width: 100px;
+    height: 100px;
+    .info h5 {
+      font-size: 12px;
+      line-height: 16px;
+      top: 30px;
+    }
+  }
+  .item-popup {
+    .item__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .item__text {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    .cart__counter-number {
+      font-size: 16px;
+    }
+    .item__info {
+      margin-bottom: 20px;
+    }
+    .item__img {
+      height: 280px;
+    }
+    .item__price {
+      bottom: 10px;
+    }
+    .item__btn {
+      width: 100%;
+    }
+    .popup--right {
+      padding: 25px 15px 55px;
+    }
+  }
   .cart {
     .cart--right {
       width: calc(90% - 262px);
@@ -210,6 +307,88 @@
 //Планшет #########################################
 //Max-Width: 800px ================================
 @media (max-width: 800px) {
+  .item-popup.mini {
+    .popup {
+      height: auto;
+      max-height: 95%;
+      width: 65%;
+    }
+    .popup--left {
+      padding: 35px 15px;
+      height: 100%;
+    }
+    .item__btn {
+      width: 70%;
+    }
+  }
+  .item-popup {
+    .item__add {
+      width: 80%;
+      .item__add-title {
+        text-align: left;
+      }
+      .item__add-list {
+        width: 100%;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 18px;
+        padding-top: 5px;
+        max-height: 185px;
+        margin-bottom: -15px;
+      }
+    }
+    .item__add-element {
+      margin: 0 auto;
+      width: 130px;
+      height: 130px;
+      .info {
+        background-color: rgba(#000, 0.3);
+        color: #fff;
+        opacity: 1;
+        backdrop-filter: none;
+      }
+      .info h5 {
+        font-size: 14px;
+        line-height: 18px;
+        // font-weight: 700;
+      }
+      .info .price {
+        font-size: 14px;
+      }
+    }
+    .popup {
+      height: 95%;
+    }
+    .popup__box {
+      height: 100%;
+      overflow: auto;
+      display: block;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .item__close {
+      // display: none;
+    }
+    .popup--left {
+      position: static;
+      padding: 30px 33px 10px;
+      width: 100%;
+    }
+    .popup--right {
+      width: 100%;
+      padding: 25px 15px;
+    }
+    .item__price {
+      position: static;
+      transform: none;
+      width: auto;
+    }
+    .item__btn {
+      width: 60%;
+    }
+  }
   .btn-up {
     width: 50px;
     height: 50px;
@@ -297,6 +476,17 @@
 
 //Max-Width: 700px ================================
 @media (max-width: 700px) {
+  .item-popup {
+    .item__add {
+      width: 100%;
+    }
+    .item__close {
+      right: -36px;
+    }
+    .popup--left {
+      padding: 25px 15px 10px;
+    }
+  }
   .items {
     .item .item__img {
       height: 160px;
@@ -356,6 +546,22 @@
 
 //Max-Width: 600px ================================
 @media (max-width: 600px) {
+  .item-popup.mini {
+    .popup {
+      width: 80%;
+    }
+  }
+  .item-popup {
+    .item__add .item__add-list {
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      max-height: 215px;
+    }
+    .item__add-element {
+      width: 160px;
+      height: 160px;
+    }
+  }
   .cart {
     .cart__back {
       position: absolute;
@@ -436,6 +642,28 @@
 
 //Max-Width: 500px ================================
 @media (max-width: 500px) {
+  .item-popup.mini {
+    .popup {
+      width: 92%;
+    }
+    .item__btn {
+      width: 85%;
+    }
+  }
+  .item-popup {
+    .popup {
+      width: 92%;
+    }
+    .item__close {
+      right: 15px;
+      top: 15px;
+      fill: #000;
+      z-index: 1500;
+    }
+    .item__btn {
+      width: 85%;
+    }
+  }
   .cart {
     .cart--left {
       width: 100%;
@@ -528,6 +756,36 @@
 
 //Max-Width: 400px ================================
 @media (max-width: 400px) {
+  .item-popup {
+    .item__add .item__add-list {
+      max-height: 190px;
+    }
+    .item__add-element {
+      width: 130px;
+      height: 130px;
+    }
+    .info h5 {
+      top: 30px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .item__img {
+      height: 230px;
+    }
+    .item__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .item__price {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
   .cart {
     .cart__back {
       top: -5px;
@@ -586,6 +844,15 @@
 
 //Max-Width: 340px ================================
 @media (max-width: 340px) {
+  .item-popup {
+    .item__add .item__add-list {
+      max-height: 190px;
+    }
+    .item__add-element {
+      width: 120px;
+      height: 120px;
+    }
+  }
   .items {
     .item {
       height: 325px;

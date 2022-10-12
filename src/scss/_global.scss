@@ -65,12 +65,7 @@ a {
   }
 
   &:hover {
-    background: #000;
-    color: #fff;
-
-    svg {
-      fill: #fff !important;
-    }
+    box-shadow: 0px 0px 15px rgba($main, 0.7);
   }
 }
 
